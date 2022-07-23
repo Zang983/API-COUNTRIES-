@@ -1,0 +1,13 @@
+#countries_display
+{
+    width:70.67%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px,1fr)) ;
+    gap:35px;
+    margin-top:50px;
+    @media screen and (min-width: 751px) {
+        width:91.4%;
+    }
+
+}

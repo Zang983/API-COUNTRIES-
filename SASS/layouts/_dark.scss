@@ -1,0 +1,36 @@
+.dark {
+    &.body {
+        background-color: #202D36;
+        color: white;
+    }
+    &.header {
+        @include boxShadowDark;
+        background-color: #2B3743;
+        i {
+            font-weight: bold;
+        }
+    }
+
+    &#search_block label i, &#search_block .input_block input,&#search_block #filter_block
+    {
+        background-color:#2B3743;
+        color:white;
+    }
+    &#search_block label,&#search_block #filter_block{
+        @include boxShadowDarker;
+    }
+    &#search_block #filter_block #filter_list{
+        background-color: #2B3743;
+        @include boxShadowDarker
+    }
+    & .country_card{
+        @include boxShadowDarker
+    }
+    & .country_card figure img{
+        border:none;
+    }
+    & .country_card figure figcaption{
+        background-color:#2B3743;
+      
+    }
+}
