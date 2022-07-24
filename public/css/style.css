@@ -11,6 +11,11 @@
   background-color: #FAFAFA;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -139,6 +144,7 @@
   text-decoration: none;
   width: 100%;
   height: 675px;
+  word-wrap: break-word;
 }
 @media screen and (min-width: 751px) {
   .country_card {
@@ -195,6 +201,167 @@
   }
 }
 
+#main_country {
+  width: 90.67%;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 751px) {
+  #main_country {
+    width: 92.36%;
+    margin: auto;
+    margin-top: 80px;
+  }
+}
+#main_country #back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 210px;
+  min-height: 65px;
+  max-width: 210px;
+  max-height: 65px;
+  box-shadow: 0px 0px 8px 3px rgb(216, 216, 216);
+  margin-bottom: 135px;
+}
+#main_country #back a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 210px;
+  min-height: 65px;
+  max-width: 210px;
+  max-height: 65px;
+}
+@media screen and (min-width: 751px) {
+  #main_country #back a {
+    min-height: 40px;
+    min-width: 136px;
+    max-height: 40px;
+    max-width: 136px;
+  }
+}
+@media screen and (min-width: 751px) {
+  #main_country #back {
+    min-height: 40px;
+    min-width: 136px;
+    max-height: 40px;
+    max-width: 136px;
+    margin-bottom: 80px;
+  }
+}
+#main_country #back i {
+  padding-right: 20px;
+}
+#main_country figure {
+  width: 100%;
+}
+@media screen and (min-width: 751px) {
+  #main_country figure {
+    display: flex;
+    flex-direction: row;
+    max-height: 550px;
+  }
+}
+#main_country figure img {
+  width: 100%;
+  height: 460px;
+}
+@media screen and (min-width: 751px) {
+  #main_country figure img {
+    width: 42.1%;
+  }
+}
+#main_country figure figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 751px) {
+  #main_country figure figcaption {
+    padding: 0px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-left: 8%;
+  }
+}
+#main_country figure figcaption h2 {
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 751px) {
+  #main_country figure figcaption h2 {
+    width: 100%;
+    padding-bottom: 35px;
+  }
+}
+#main_country figure figcaption .information_country_block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#main_country figure figcaption .information_country {
+  margin-bottom: 100px;
+}
+#main_country figure figcaption .information_country li {
+  list-style-type: none;
+  margin-bottom: 45px;
+}
+#main_country figure figcaption .information_country li:last-child {
+  margin: 0px;
+}
+@media screen and (min-width: 751px) {
+  #main_country figure figcaption .information_country li {
+    margin-bottom: 10px;
+  }
+}
+#main_country figure figcaption #border_countries_link {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main_country figure figcaption #border_countries_link h3 {
+  width: 100%;
+  margin-bottom: 45px;
+}
+@media screen and (min-width: 751px) {
+  #main_country figure figcaption #border_countries_link h3 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+}
+#main_country figure figcaption .link_border button {
+  width: 190px;
+  height: 60px;
+  background-color: inherit;
+  border: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px 3px rgb(216, 216, 216);
+}
+@media screen and (min-width: 751px) {
+  #main_country figure figcaption .link_border button {
+    height: 30px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 0.5rem;
+    margin-right: 20px;
+    margin-top: 0px;
+  }
+}
+
 #countries_display {
   width: 70.67%;
   margin: auto;
@@ -220,7 +387,7 @@
 .dark.header i {
   font-weight: bold;
 }
-.dark#search_block label i, .dark#search_block .input_block input, .dark#search_block #filter_block {
+.dark#search_block label i, .dark#search_block .input_block input, .dark#search_block #filter_block, .dark#main_country .link_border button {
   background-color: #2B3743;
   color: white;
 }
@@ -238,5 +405,13 @@
   border: none;
 }
 .dark .country_card figure figcaption {
+  background-color: #2B3743;
+}
+.dark#main_country #back {
+  box-shadow: 0px 0px 8px 3px #1C2834;
+  background-color: #2B3743;
+}
+.dark#main_country .link_border button {
+  box-shadow: 0px 0px 8px 3px #1C2834;
   background-color: #2B3743;
 }

@@ -7,3 +7,16 @@
 @mixin boxShadowDarker{
     box-shadow: 0px 7px 10px -5px #1C2834;
 }
+@mixin boxShadowButton{
+    box-shadow: 0px 0px 8px 3px rgb(216, 216, 216);
+}
+@mixin boxShadowButtonDark{
+    box-shadow: 0px 0px 8px 3px #1C2834;
+}
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

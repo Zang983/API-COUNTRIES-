@@ -3,7 +3,6 @@ let listePays = "", pageActuelle = 0, nombreDrapeauAfficher = 305;
 let btn_filter = document.getElementById("filter_block");
 let filters = [];
 
-
 class filter {
     name = "";
     status = false;
@@ -64,7 +63,7 @@ function searchBar(result,value)
 function afficheElement(pays) {
     let name = pays.name.common, capital = pays.capital, region = pays.region
     let flag = pays.flags.png
-    let link = "#";
+    let link = `./country.html?cca2=${pays.cca2}&cca3=${pays.cca3}ccn3=${pays.ccn3}`;
     let blockParent = document.getElementById("countries_display");
     let population =new Intl.NumberFormat("en-US").format(pays.population)
 
@@ -129,6 +128,8 @@ function accueil() {
             }
         })
         .then(result => {
+            console.log(result[0])
+            console.log(result[1])
             let inputSearch = document.getElementById("search_input");
             inputSearch.addEventListener("input",()=>searchBar(result,inputSearch.value))
             creationFiltre(result)

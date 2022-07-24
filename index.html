@@ -13,15 +13,16 @@
     <title>Countries API</title>
 </head>
 
-<body class="body">
+<body class="body" data-barba="wrapper">
     <header class="header">
         <h1>Where in the world ?</h1>
         <p id="btn_dark_mode"><i class="fa-regular fa-moon"></i>Dark Mode</p>
     </header>
-    <section id="search_block">
+    <div data-barba="container">
+    <section id="search_block" >
         <div class="input_block">
             <label for="search_input" class="label"><i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="search_input" class=" placeholder="Search for a country..."></label>
+            <input type="text" id="search_input" class=" placeholder="Search for a country...></label>
         </div>
         <div id="filter_block">
             <p>Filter by Region <i class="fa-solid fa-chevron-down"></i></p>
@@ -38,8 +39,11 @@
     <main id="countries_display">
 
     </main>
+</div>
     <script src="script.js"></script>
     <script src="dark_mode.js"></script>
+    
+
 </body>
 
 </html>

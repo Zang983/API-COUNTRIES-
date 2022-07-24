@@ -11,7 +11,7 @@
         }
     }
 
-    &#search_block label i, &#search_block .input_block input,&#search_block #filter_block
+    &#search_block label i, &#search_block .input_block input,&#search_block #filter_block,&#main_country .link_border button
     {
         background-color:#2B3743;
         color:white;
@@ -31,6 +31,16 @@
     }
     & .country_card figure figcaption{
         background-color:#2B3743;
-      
     }
+    &#main_country #back
+    {
+        @include boxShadowButtonDark;
+        background-color: #2B3743;
+    }
+    &#main_country .link_border button{
+        @include boxShadowButtonDark;
+        background-color: #2B3743;
+
+    }
+
 }
